@@ -3,6 +3,16 @@ function contarParesConContinue(numeros) {
   // Devuelve la cantidad de números pares que hay en el array.
   // Evita los impares utilizando continue.
   // Tu código:
+var contador = 0;
+for (const num of numeros) {
+  if (num % 2 !== 0) {
+    continue;
+  }
+  contador++;
+}
+
+return contador;
+
 }
 
 module.exports = contarParesConContinue;
